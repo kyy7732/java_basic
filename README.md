@@ -22,3 +22,6 @@
 * 자바 가상머신(JVM)의 이해2(CastingExample2) ([크기가 큰 데이터 -> 작은 데이터]int -> byte, int -> char, double -> int)
 * 자바 가상머신(JVM)의 이해3(CastingExample3) [서로 다른 타입의 데이터는 타입이 큰 쪽으로 맞춰져서 자동 형 변환]
   * (int : char = int, int : double = double, byte : byte = int[데이터 손실의 방지])
+
+#### **2023-08-23**
+## **begin** ****추가****
