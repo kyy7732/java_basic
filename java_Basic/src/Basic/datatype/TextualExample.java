@@ -5,11 +5,7 @@ public class TextualExample {
 	public static void main(String[] args) {
 
 		
-		char c1 = 'A';
-		System.out.println(c1);
 		
-		char c2 = 65; //(A) 
-		System.out.println(c2);
 		
 		/*
         # 문자열을 저장할 수 있는 데이터 타입 String

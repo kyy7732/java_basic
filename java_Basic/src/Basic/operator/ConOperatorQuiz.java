@@ -13,7 +13,7 @@ public class ConOperatorQuiz {
         3항 연산의 결과: 홀수입니다. or 짝수입니다.
        */
 		
-		int rd = (int)(((Math.random() * 355) + 42));
+		int rd = (int)(((Math.random() * 355) + 42));// * (최대값 - 최소값)) + (최소값)
 //		System.out.println(rd);
 		String rd3 = (rd % 2 == 1 ? "홀수" : "짝수");
 		System.out.println("발생한 난수: " + rd);

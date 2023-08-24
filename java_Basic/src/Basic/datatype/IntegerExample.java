@@ -18,7 +18,11 @@ public class IntegerExample {
 		// 기본값이 int이므로 int보다 큰 범위를 사용하려면 숫자 뒤에
 		// L을 붙여야 한다.
 		
+		char c1 = 'A';
+		System.out.println(c1);
 		
+		char c2 = 65; //(A) 
+		System.out.println(c2);
 		
 	}
 
