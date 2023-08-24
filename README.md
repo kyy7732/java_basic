@@ -24,5 +24,15 @@
   * (int : char = int, int : double = double, byte : byte = int[데이터 손실의 방지])
 
 #### **2023-08-23**
-## **begin**
-* Scanner(ScannerExample)
+## **begin**(추가)
+* Scanner(ScannerExample) (next, nextLine,nextInt...)
+
+## **constate**
+* If문(IfExample1) (if)
+* else if, else활용(IfExample2) (else if, else)
+* 다중 if문(IfExample3)
+* Switch문(SwitchExample1) (Switch, default)
+* Switch문 안에 If문 활용(SwitchExample2) (Switch > If)
+
+## **Loop**
+* While 활용(WhileExample1) (While)
