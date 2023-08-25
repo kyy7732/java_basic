@@ -20,37 +20,38 @@ public class WhileQuiz02 {
 		         - while문을 if else 로 나눠서 두번 쓰는 것은 지양하겠습니다.
 		        */
 		
-		Scanner sc1 = new Scanner(System.in);
-		Scanner sc2 = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 		
 		System.out.print("첫번째 정수를 입력해 주세요: ");
-		int valX = sc1.nextInt();
+		int valX = sc.nextInt();
 		System.out.print("두번째 정수를 입력해 주세요: ");
-		int valY = sc2.nextInt();
+		int valY = sc.nextInt();
 		
-		int x = valX;
-		int y = valY;
 		int total = 0; // begin
 		
-		
-		if(x > y) {
-			x = valY;
-			y = valX;
-			
+		/*
+		if(valX > valY) {
+			int temp = valX;
+			valX = valY;
+			valY = temp;
 		}
 		
-		int start = x;
-		int end = y;
-		while(start <= end) {
+		int start = valX	;
+		*/
+		int start = (valX > valY ? valY : valX);
+		int end = (valX < valY ? valX : valY);
+		
+		
+		
+		while(start <= end ) { // end -> valY
 			total += start;
 			start++;	
 		}
-		System.out.printf("%d부터 %d까지의 누적합계: %d", x, y, total);
+		System.out.printf("%d부터 %d까지의 누적합계: %d", start, end, total);
 		
 		
 		
-		sc1.close();
-		sc2.close();
+		sc.close();
 		
 	}
 

@@ -16,16 +16,14 @@ public class IfQuiz03 {
 		         */
 		
 		
-		Scanner sc1 = new Scanner(System.in);
-		Scanner sc2 = new Scanner(System.in);
-		Scanner sc3 = new Scanner(System.in);
-		
+		Scanner sc = new Scanner(System.in);
+
 		System.out.print("값을 입력해 주세요: ");
-		int num1 = sc1.nextInt(); // 1
+		int num1 = sc.nextInt(); // 1
 		System.out.print("값을 입력해 주세요: ");
-		int num2 = sc2.nextInt(); // 2
+		int num2 = sc.nextInt(); // 2
 		System.out.print("값을 입력해 주세요: ");
-		int num3 = sc3.nextInt(); // 3
+		int num3 = sc.nextInt(); // 3
 		
 		
 		int max = 0;
@@ -60,7 +58,7 @@ public class IfQuiz03 {
 				mid += num1;
 			} else {
 				max += num1;
-				mid += num3;
+				mid += num2;
 			}
 		} else {
 			System.out.println("다시 입력해주세요");
@@ -73,9 +71,8 @@ public class IfQuiz03 {
 		
 		
 		
-		sc1.close();
-		sc2.close();
-		sc3.close();
+		sc.close();
+
 		
 		
 	}

@@ -16,12 +16,12 @@ public class IfQuiz01 {
        */
 		
 		Scanner sc = new Scanner(System.in);
-		Scanner sc2 = new Scanner(System.in);
+
 		
 		System.out.print("첫번째 수를 입력하세요: ");
 		int num1 = sc.nextInt();
 		System.out.print("두번째 수를 입력하세요: ");
-		int num2 = sc2.nextInt();
+		int num2 = sc.nextInt();
 		System.out.printf("입력받은 수: %d, %d\n", num1, num2);
 		
 		if(num1 < num2) {
@@ -35,7 +35,6 @@ public class IfQuiz01 {
 		}
 		
 		sc.close();
-		sc2.close();
 	}
 
 

@@ -20,7 +20,7 @@ public class BreakExample1 {
         */
 		
 		outer: for(int i = 0; i <= 2; i++) { // 반복문에 label을 붙여 break (label)을하면 그쪽까지 탈출한다.
-			for(int j = 0; j <= 1; j++) {
+			for(int j = 0; j <= 1; j++) {// continue도 똑같다
 				if(i == j) break outer;
 				System.out.println(i + "-" + j);
 				

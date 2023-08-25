@@ -14,43 +14,51 @@ public class SwitchQuiz01 {
 		          결과를 말씀해 주세요.
 		*/
 		
-		Scanner sc1 = new Scanner(System.in);
-		Scanner sc2 = new Scanner(System.in);
-		Scanner sc3 = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
+
 		
 		System.out.print("숫자를 입력하세요: ");
-		int value1 = sc1.nextInt();
-		System.out.print("연산자를 입력하세요: ");
-		String plus = sc2.next();
+		int value1 = sc.nextInt();
+		System.out.print("연산을 선택하세요. [+,-,*,/] :");
+		String plus = sc.next();
 		System.out.print("숫자를 입력하세요: ");
-		int value2 = sc3.nextInt();
+		int value2 = sc.nextInt();
+		
+		int result = 0;
+		
+		boolean flag = false; // boolean 기본값이 false여서 대부분 false로 쓴다
 		
 		
 		switch(plus) {
 			case "+":
-				System.out.printf("%d %s %d = %d", value1, plus, value2, (value1 + value2));
+				result = value1 + value2;
 				break;
 			case "-":
-				System.out.printf("%d %s %d = %d", value1, plus, value2, (value1 - value2));
+				result = value1 - value2;
 				break;
 			case "*":
-				System.out.printf("%d %s %d = %d", value1, plus, value2, (value1 * value2));
+				result = value1 * value2;
 				break;
 			case "/":
-				System.out.printf("%d %s %d = %d", value1, plus, value2, (value1 / value2));
+				if(value2 == 0) {
+					System.out.println("연산할 수 없는 입력값 입니다.");
+					flag = true;
+					break;
+				}
+				result = value1 / value2;
 				break;
 			case "%":
-				System.out.printf("%d %s %d = %d", value1, plus, value2, (value1 % value2));
+				result = value1 % value2;
 				break;
 			default:
 				System.out.println("연산자를 똑바로 입력해주세요");
-			
 		}
 		
-		
-		sc1.close();
-		sc2.close();
-		sc3.close();
+		if(!flag) {
+		System.out.printf("%d %s %d = %d", value1, plus, value2, result);
+		}
+		sc.close();
+
 		
 	}
 
