@@ -17,7 +17,7 @@ public class EmployeeManager {
 
 		// 실제로 입력된 데이터(사원의 정보)의 개수를 체크하는 변수.
 		int count = 0;
-		boolean flag1 = false; // 4. 사원 정보 수정(사번 없을때)
+
 
 
 
@@ -52,16 +52,14 @@ public class EmployeeManager {
 						}
 					}
 					System.out.print("이름: ");
-					String name = sc.next();
+					names[count] = sc.next();
 					System.out.print("나이: ");
-					int age = sc.nextInt();
+					ages[count] = sc.nextInt();
 					System.out.print("부서명: ");
-					String dpName = sc.next();
+					departments[count] = sc.next();
 
 					userNums[count] = num;
-					names[count] = name;
-					ages[count] = age;
-					departments[count] = dpName;
+					System.out.println(names[count] + "님의 정보가 정상 등록되었습니다.");
 					count++;
 					break;
 				}
@@ -70,39 +68,34 @@ public class EmployeeManager {
 				//각 배열을 반복문을 통해 저장된 데이터까지만 출력하도록 작성. (count)등록한 수 만큼 카운트가 올라간다
 				//만약 사용자가 사원 등록을 한 명도 하지 않았다면
 				//"등록된 사원 정보가 없습니다." 를 출력하시면 됩니다.
-				
-				for(int i = 0; i < userNums.length; i++) {
-					
-					if(userNums[i] == null) break;
-					System.out.printf("사번: %s     이름: %s     나이: %d     부서명: %s\n", 
-										userNums[i], names[i], ages[i], departments[i]);
-				}
 				if(count == 0) {
 					System.out.println("등록된 사원 정보가 없습니다.");
 				} else {
+					for(int i = 0; i < userNums.length; i++) {
+						if(userNums[i] == null) break;
+						System.out.printf("사번: %s\t 이름: %s\t 나이: %d\t 부서명: %s\n", 
+											userNums[i], names[i], ages[i], departments[i]);
+					}
 					System.out.println("총 사원수: " + count + "명 입니다.");
 				}
-				continue menu;
 			} else if(menu == 3) {
 				//입력한 사번에 일치하는 사원의 4가지 정보를 모두 출력하세요.
 				//입력한 사번이 존재하지 않는다면 "조회하신 사원의 정보가 없습니다." 를 출력.
-				boolean flag15 = false; // 3. 사원 정보 검색(일치하는사원없을때 사용)
+				boolean flag3 = false; // 3. 사원 정보 검색(일치하는사원없을때 사용)
 				System.out.println("찾으실 사원의 사번을 입력해주세요");
 				System.out.print("> ");
 				String search = sc.next();
 				for(int i = 0; i < userNums.length; i++) {
 					if(search.equals(userNums[i])) {
-						System.out.printf("사번: %s     이름: %s     나이: %d     부서명: %s\n", 
+						System.out.printf("사번: %s\t 이름: %s\t 나이: %d\t 부서명: %s\n", 
 										userNums[i], names[i], ages[i], departments[i]);
-						flag15 = true;
+						flag3 = true;
 						break;
 					}
-					flag15 = false;
 				}
-				if(!flag15) {
+				if(!flag3) {
 					System.out.println("조회하신 사원의 정보가 없습니다.");
 				}
-				continue menu;
 			} else if(menu == 4) {
 				//해당 사번과 일치하는 사원의 나이와 부서를 선택적으로 변경할 수 있도록
 				//프로그램을 구성하시고, 나이와 부서를 수정하는 코드를 작성하세요.
@@ -111,10 +104,11 @@ public class EmployeeManager {
 				System.out.println("수정하실 사원의 사번을 입력해 주세요.");
 				System.out.print("> ");
 				String search = sc.next();// 수정할 사원의 사번 입력값
-
+				boolean flag1 = false; // 4. 사원 정보 수정(사번 없을때)
 
 				for(int i = 0; i < userNums.length; i++) {
 					if(search.equals(userNums[i])) {
+			menu4:	while(true) {
 						System.out.println("[1. 나이변경 | 2. 부서변경 | 3.취소]");
 						System.out.print("> ");
 						int num = sc.nextInt(); // 선택지 입력
@@ -123,26 +117,25 @@ public class EmployeeManager {
 								System.out.println("변경전 나이: " + ages[i]);
 								System.out.println("나이를 수정해 주세요.");
 								System.out.print("> ");
-								num = sc.nextInt(); // 나이 변경값 받기
-								ages[i] = num;
+								ages[i] = sc.nextInt(); // 나이 변경값 받기
 								System.out.println("변경 후 나이: " + ages[i]);
 								break;
 							case 2:
 								System.out.println("변경전 부서: " + departments[i]);
 								System.out.println("부서를 변경해 주세요.");
 								System.out.print("> ");
-								String dpm = sc.next(); // 부서 변경값 받기
-								departments[i] = dpm;
+								departments[i] = sc.next(); // 부서 변경값 받기
 								System.out.println("변경된 부서: " + departments[i]);
 								break;
 							case 3:
 								System.out.println("이전으로 돌아갑니다.");
-								continue menu;
+								break menu4;
 							default: 
 								System.out.println("잘못 입력했습니다.");
-								continue menu; 
 						} // end switch
+						} // end while
 						flag1 = true;
+						break;
 					} // end if
 				} // end for
 				
@@ -150,7 +143,6 @@ public class EmployeeManager {
 					System.out.println("입력하신 사번은 없습니다.");
 					flag1 = false;
 				}
-				continue menu;
 			} else if(menu == 5) {
 				//사번을 입력받아서
 				//해당 사번과 일치하는 사원의 4가지 정보를 각 배열에서 모두 삭제하고
@@ -174,13 +166,23 @@ public class EmployeeManager {
 						System.out.print("> ");
 						String answer = sc.next().toUpperCase();
 					for(int j = i; j < userNums.length - 1; j++) {
-						if(answer.equals("Y")) {
+						if(answer.equals("Y") || answer.equals("ㅛ")) {
+							/*
+							if(i == userNums.length - 1) { 
+								// 배열이 줄지 않고 그 크기대로 쓰는 상황에서는 
+								// 맨 마지막배열은 안끌어와지므로 따로 처리해줘야한다.
+								userNums[i] = null;
+								names[i] = null;
+								ages[i] = 0;
+								departments[i] = null;
+							}
+							*/
 							userNums[j] = userNums[j + 1];
 							names[j] = names[j + 1];
 							ages[j] = ages[j + 1];
 							departments[j] = departments[j + 1];
 							flag12 = true;
-						} else if(answer.equals("N")){
+						} else if(answer.equals("N") || answer.equals("ㅜ")){
 							System.out.println("삭제가 취소되었습니다.");
 							continue menu;
 						} else {
@@ -235,10 +237,7 @@ public class EmployeeManager {
 
 		} // end while true
 
-		System.out.println(userNums.length);
-		System.out.println(Arrays.toString(names));
-		System.out.println(ages.length);
-		System.out.println(Arrays.toString(departments));
+
 	} // end main
 }
 
