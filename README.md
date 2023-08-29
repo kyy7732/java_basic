@@ -1,5 +1,6 @@
 # java_basic
 #### **2023-08-22**
+### **Basic**
 ## **begin**
  * 주석 (CommentsExample)
  * 자바 표준 형식 (PrintExample) (println,print,printf)
@@ -73,3 +74,28 @@
 * 메서드 사용법 (MethodExample1) (메서드 선언)
 * 메서드 활용 (MethodExample2) (누적합계, 매개변수 필요없는경우, 받을 값이 많을때, 가변 인수(가변 파라미터))
 * 메서드 return활용 (MethodExample3) (리턴값이 많을때, void(리턴이없을때), 메서드 강제 종료)
+
+#### **2023-08-29**
+## **Method**(추가)
+* 메서드 활용 (MethodQuiz01) (메서드로 약수구하기)
+* 메서드 응용 (MethodQuiz02) (배열 마지막줄 데이터 추가, 배열 내 데이터 찾기, 배열 포함 여부, 제거, 수정)
+
+### **oop**
+## **basic**
+* 객체 설계용 클래스 (Pen) (Pen 객체 설계 클래스)
+* 객체 호출 클래스 (PenMain) (Pen 객체 호출 클래스)
+* 맴버 변수(필드) (MemberLocalVariable) (맴버 변수(필드), 지역 변수 설명)
+
+## **String**
+* User객체 생성 (User) (User객체 생성)
+* User객체 활용 (CompareStr)(객체 선언)
+* 다양한 메소드 (StringMethod) (문자열 추출 메소드, 단일 문자 반환, 범위 지정하여 추출, 총 길이 반환, 해당 만자가 있는 인덱스 반환, 문자 시작 인덱스, 일괄 대/ 소문자 변경, 문자열의 앞, 뒤 공백제거, 문자열 수정, 문자열을 구분자로 구분하여 분할, 문자열의 정수/실수 변환, 기본 타입을 문자열로 변경)
+* 문자열 추출 메소드 문제(StringQuiz01) (id입력후 공백제거 등)
+* 문자열 추출 메소드 문제(StringQuiz02) (주민등록번호로 남여판별)
+
+## **Constructor**
+* Phone생성자 사용법 (Phone) (Phone생성자 생성 , 생성자 오버로딩 (중복 선언))
+* Phone생성자 호출 (PhoneMain) (Phone생성자 호출)
+* Person생성자 생성 (Person) (Person생성자 생성)
+* Person생성자 호출 (PersonMain) (Person생성자 입력받은 값 호출)
+* import (MainClass) (다른 패키지에 있는 클래스 객체 생성)
