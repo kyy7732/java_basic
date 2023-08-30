@@ -33,9 +33,9 @@ public class MethodQuiz02 {
 			if(num.equals(foods[i])) {
 				return i;
 			} 
-			}
-		return -1;
 		}
+	return -1;
+	}
 	
 	
 	
