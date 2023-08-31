@@ -120,3 +120,17 @@
 ## **Encap-good**
 * getter,setter 사용법 (MyBirth) (범위를 지정한 getter,setter사용법, getter에 입력값 설정, 정보 은닉,캡슐화 등)
 * getter,setter 출력 (MainClass) (private된 값들을 getter, setter를 이용하여 출력)
+
+#### **2023-08-31**
+## **Overloading**
+* 오버로딩 활용 (Calculator) (오버로딩 정의, 매개변수 중복 선언)
+
+## **Obj_arr**
+* getter,setter 단축키 (Person) (alt + shift + s -> generate getters and setters, alt + shift + s -> generater constructor using fields)
+* 배열을 활용한 객체 생성, 출력 (MainClass) (Person클래스의 객체를 출력(객체안의 배열 활용)
+* 배열 문제 (ArrayInsert) (배열 객체, 배열안에 입력한 내용넣기(for문 활용))
+
+## **Poly**
+* 다형성 정의 (basic) (상속 관계, object)
+* 다형성 예시 (Car) (다형성 예시)
+* 다형성 예제 (Player) (10~15의 난수를 발생시켜 타겟들에게 각각 적용(배열활용))
