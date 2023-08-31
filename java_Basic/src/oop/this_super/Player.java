@@ -39,6 +39,7 @@ public class Player {
 			System.out.println("스스로는 때릴 수 없습니다.");
 			return;
 		}
+		
 			System.out.println(this.name + "(이)가 " + target.name + "(을)를 공격합니다.");
 			
 			target.hp -= 10;
