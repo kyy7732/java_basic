@@ -1,6 +1,6 @@
 # java_basic
 #### **2023-08-22**
-### **Basic**
+# **Basic**
 ## **begin**
  * 주석 (CommentsExample)
  * 자바 표준 형식 (PrintExample) (println,print,printf)
@@ -80,7 +80,7 @@
 * 메서드 활용 (MethodQuiz01) (메서드로 약수구하기)
 * 메서드 응용 (MethodQuiz02) (배열 마지막줄 데이터 추가, 배열 내 데이터 찾기, 배열 포함 여부, 제거, 수정)
 
-### **oop**
+# **oop**
 ## **basic**
 * 객체 설계용 클래스 (Pen) (Pen 객체 설계 클래스)
 * 객체 호출 클래스 (PenMain) (Pen 객체 호출 클래스)
@@ -99,3 +99,38 @@
 * Person생성자 생성 (Person) (Person생성자 생성)
 * Person생성자 호출 (PersonMain) (Person생성자 입력받은 값 호출)
 * import (MainClass) (다른 패키지에 있는 클래스 객체 생성)
+
+#### **2023-08-30**
+## **Inherit-good**
+* 상속(extends)활용 (Player) (부모클래스 정의, 중복값 생성 메소드(부모))
+* 상속(extends)호출 (MainClass) (상속자 호출)
+* 자식클래스 활용 (Warrior) (자식클래스 정의, 오버라이딩 정의)
+
+## **This_super**
+* 상속 활용 (Player) (this(같은 클래스의 다른 생성자를 부르는 문법.))
+* 상속 활용 (MainClass) (상속자 호출)
+* 자식클래스 활용 (Warrior) (super 활용, 자바 기본생성자)
+
+## **modi**
+* public (어떤 클래스에서든 접근 가능, 다른 패키지도 가능 접근 제한 자체가 없는 경우)
+* default (같은 패키지 내에서만 접근 가능, 접근자 안쓴 기본 상태)
+* protected (모든 클래스 접근 가능, 다른 패키지에서는 상속받은 자식 클래스에서만 접근 가능, default와 접근 제한 범위가 비슷하지만, 상속여부에 따라 다름)
+* private (같은 클래스 내에서만 접근 가능, getter, setter를 이용해야)
+
+## **Encap-good**
+* getter,setter 사용법 (MyBirth) (범위를 지정한 getter,setter사용법, getter에 입력값 설정, 정보 은닉,캡슐화 등)
+* getter,setter 출력 (MainClass) (private된 값들을 getter, setter를 이용하여 출력)
+
+#### **2023-08-31**
+## **Overloading**
+* 오버로딩 활용 (Calculator) (오버로딩 정의, 매개변수 중복 선언)
+
+## **Obj_arr**
+* getter,setter 단축키 (Person) (alt + shift + s -> generate getters and setters, alt + shift + s -> generater constructor using fields)
+* 배열을 활용한 객체 생성, 출력 (MainClass) (Person클래스의 객체를 출력(객체안의 배열 활용)
+* 배열 문제 (ArrayInsert) (배열 객체, 배열안에 입력한 내용넣기(for문 활용))
+
+## **Poly**
+* 다형성 정의 (basic) (상속 관계, object)
+* 다형성 예시 (Car) (다형성 예시)
+* 다형성 예제 (Player) (10~15의 난수를 발생시켜 타겟들에게 각각 적용(배열활용))
