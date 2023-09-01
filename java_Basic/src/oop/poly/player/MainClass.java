@@ -33,6 +33,11 @@ public class MainClass {
 		Player[] p = {w1, w2, m2, h1, h2};
 		m1.blizzard(p);
 		
+		System.out.println("==========================");
+		
+		w1.rush(m2);
+		w1.rush(w2);
+		w1.rush(h1);
 		
 		
 	}

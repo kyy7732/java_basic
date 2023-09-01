@@ -8,7 +8,7 @@ public class MainClass {
 //		my.year = 1992; (x)
 		my.setYear(1992);
 		my.setMonth(11);
-		my.setDay(31);
+		my.setDay(30);
 		
 	
 		my.birthInfo();
