@@ -134,3 +134,37 @@
 * 다형성 정의 (basic) (상속 관계, object)
 * 다형성 예시 (Car) (다형성 예시)
 * 다형성 예제 (Player) (10~15의 난수를 발생시켜 타겟들에게 각각 적용(배열활용))
+
+#### **2023-09-01**
+## **Poly - Casting**
+* 다형성 형 변환 (MainClass) ( 부모가 자식의 객체를 호출, 부모클래스를 자식으로 형 변환)
+
+## **poly - car** (추가)
+* instanceof (CarShop) ( c instanceof Sonata = c가 Sonata 타입을 가질수 있느냐??)
+
+## **Static - field**
+* static 사용법 (MainClass, Count) (static 정의, static은 클래스의 이름으로 접근)
+
+## **Static_ - Method**
+* instanceof 사용법 (Count) (static 정의2, 인스턴스 메서드안에 정적(static)변수와 인스턴스 변수 모두 참조 가능)
+
+## **Static_ - Calc**
+* static 활용 (Calculator) (static을 붙일지 말지 예시)
+
+## **Static_ - Init**
+* static 응용 (DBManager) (정적 초기화자 정의, 정적 초기화자(static호출 메소드))
+
+## **Static_ - Singleton**
+* singleton(싱글톤) (Singleton) (singleton 정의)
+
+## **Final_ - field**
+* final 사용법 (Person) (필드변수final(초기화불가(수정 불가)
+
+## **Final_ - Method**
+* final 사용법 (Parent) (초기화 불가, 오버라이딩 불가, final 클래스는 상속 불가)
+
+## **Final_ - Constant**
+* 상수(Constant) (Earth) (고정된 불변의값, static final사용)
+
+## **abs - good**
+* 추상메서드(abstract) (HeadStore) (추상메서드 정의, 추상메서드 사용법)
