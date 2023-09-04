@@ -168,3 +168,20 @@
 
 ## **abs - good**
 * 추상메서드(abstract) (HeadStore) (추상메서드 정의, 추상메서드 사용법)
+
+#### **2023-09-04**
+## **Inter - basic**
+* 인터페이스 사용법 (...) (인터페이스 정의)
+
+## **Good**
+* 인터페이스 활용 (MainClass) (인터페이스 활용)
+
+# **etc.exception**
+## **basic**
+* 예외처리 사용법 (TryCatchExample) (try-catch, 예외 처리 정의)
+* 다중 예외처리 방법 (MultiCatchExample) (다중 catch문, 다중 catch문 정의, e.getMessage(): 예외처리 내용확인)
+* 반복문(while(true))에 입력값 받는 예외처리 (MainClass) (정수만 입력하는 반복문에sc.nextLine()을 입력해서 입력을 다시 받을수 있다.)
+* Finally 사용법 (FinallyExample) (finally: 예외 발생 여부와 상관 없이 항상 실행하고 싶은 문장을 작성)
+
+## **Throws_**
+* throws 사용법 (ThrowsExample) (throws 정의)
