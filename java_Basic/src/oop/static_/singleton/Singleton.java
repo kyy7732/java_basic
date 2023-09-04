@@ -7,8 +7,8 @@ public class Singleton {
 	 
 	 1. 외부에서 이 클래스의 객체를 생성하지 못하게 생성자를 단 1개만
 	 	선언하고, private 접근 제한을 붙임.
-	 	
 	 */
+	
 	private Singleton() {
 		System.out.println("객체가 생성됨!");
 		

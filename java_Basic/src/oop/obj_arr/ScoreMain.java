@@ -1,6 +1,5 @@
 package oop.obj_arr;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class ScoreMain {
@@ -28,31 +27,34 @@ public class ScoreMain {
 		Score[] score = new Score[100];
 
 		for(int i = 0; i < score.length; i++) {
-		System.out.print("이름: ");
-		String name = sc.next();
-		if(name.equals("그만")) {
-			System.out.println("입력을 그만합니다.");
-			break;
-		} // end if
-		System.out.print("국어: ");
-		int kor = sc.nextInt();
-		System.out.print("영어: ");
-		int eng = sc.nextInt();
-		System.out.print("수학: ");
-		int math = sc.nextInt();
-		
-		
-		score[i] = new Score(name, kor, eng, math);
-		}
+			System.out.println("*** 학생 점수 입력 프로그램 ***");
+			System.out.println("'그만'을 입력하시면 종료됩니다.");
+			
+			System.out.print("이름: ");
+			String name = sc.next();
+			if(name.equals("그만")) {
+				System.out.println("입력을 종료합니다.");
+				break;
+			} // end if
+			System.out.print("국어: ");
+			int kor = sc.nextInt();
+			System.out.print("영어: ");
+			int eng = sc.nextInt();
+			System.out.print("수학: ");
+			int math = sc.nextInt();
 
-		 // end for
+			score[i] = new Score(name, kor, eng, math);
+			
+			System.out.println("*** 입력 완료! ***\n");
+		}
+		// end for
 
 		for(Score a : score) {
-			if(a == null) break;
+			if(a == null) break; // 아무 값도 참조하지 않을 때 끝내라
 			a.scoreInfo();
 			System.out.println("");
 		}
-		
+
 		sc.close();
 	}
 
