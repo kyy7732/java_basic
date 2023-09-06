@@ -185,3 +185,33 @@
 
 ## **Throws_**
 * throws 사용법 (ThrowsExample) (throws 정의)
+
+## **Throw_**
+* throw 사용법 (ThrowExample) (throw : 강제로 예외를 발생시킴, throw 정의)
+
+## **Custom**
+* throw 활용 (LoginValidateException) (직접 에러 메세지를 만드는 법)
+
+# **etc.api.lang**
+## **obj**
+* object에서 제공하는 메서드 (Person) (toString, clone, hashCode, equals, finalize)
+
+## **Stringbuilder**
+* StringBuilder, StringBuffer 사용법 (StrBuilderExample) (정의, StringBuilder append(문자열 맨 끝에 추가),
+  insert(특정 인덱스에 삽입), replace((특정 인덱스 범위 문자열 교체), delete(특정 단어 삭제))
+
+## **Math**
+* Math 활용 (MathExample) (Math.ceil(올림),floor(내림),round(반올림),pow(제곱),max(최대값),min(최소값))
+* page로직 (MathQuiz) (게시판 page만들때 사용하는 page로직)
+
+## **Wrapper**
+* 데이터 타입을 객체 타입으로 변환 (WrapperExample) (autoboxing,autounboxing)
+
+# **etc.api.util**
+## **Date**
+* 날짜 정보 얻기 (DateExample) (LocalDate(연,월,일),LocalTime(시,분,초),
+  LocalDateTime(연,월,일,시,분,초).now();.of(연,월,일,시,분,초)(특정 날짜 시간 정보 얻기) 등등등...)
+
+## **arrays**
+* arrays(배열) (ArraysExample) (배열의복사, 탐색,오름,내림정렬, 배열 내부 요소가 동일한지 여부 확인)
+* arrays 예제 (ArraysQuiz) (완주하지 못한 선수를 출력하는 함수)
