@@ -31,24 +31,9 @@ public class LottoSimulator {
 
 
 
-		outer: while(true) {
+		while(cre.size() < 6) {
 			int num1 = r.nextInt(45) + 1;
-			int num2 = r.nextInt(45) + 1;
-			int num3 = r.nextInt(45) + 1;
-			int num4 = r.nextInt(45) + 1;
-			int num5 = r.nextInt(45) + 1;
-			int num6 = r.nextInt(45) + 1;
 			cre.add(num1);
-			cre.add(num2);
-			cre.add(num3);
-			cre.add(num4);
-			cre.add(num5);
-			cre.add(num6);
-			if(cre.size() < 6) {
-				cre.clear();
-				continue outer;
-			}
-			break;
 		}
 		return cre;
 	}
@@ -89,12 +74,12 @@ public class LottoSimulator {
          나머지 -> 꽝
 		 */
 
-		
+
 		int count = 0;
 		for(int n : myNum) {
 			if(num.contains(n)) count++;
 		}
-		
+
 		if(count == 6) prize1++;
 		else if(count == 5) {
 			if(myNum.contains(bonus)) prize2++;
@@ -106,9 +91,9 @@ public class LottoSimulator {
 		} else {
 			failCnt++;
 		}
-		
-		
-		
+
+
+
 	}
 
 
@@ -121,30 +106,30 @@ public class LottoSimulator {
 		System.out.println("당첨 번호: " + win);
 
 		//보너스번호도 하나 고정시키세요.
-		System.out.println("보너스 번호: " + createBonusNum(win));
-		int bon = createBonusNum(win);
+		int bonus = createBonusNum(win);
+		System.out.println("보너스 번호: " + bonus);
 		long pay = 0;
-		  System.out.println("추첨을 시작합니다.");
-		        while(true) {
-		/*
+		int paper = 0;
+		System.out.println("추첨을 시작합니다.");
+		while(true) {
+			/*
              - 1등이 당첨 될 때까지 반복문을 돌립니다.
              - 1등이 당첨 된다면, 1등이 되기까지 누적 당첨 횟수를 출력하고
               반복문을 종료합니다.
              - 로또를 구매하기 위한 금액도 출력하세요. (long)
-		 */
-		        
-		        checkLottoNumber(win, createLotto(), bon);
-		        	
-		        if(prize1 == 1) {
-		        	System.out.println("당첨번호: " + win + "보너스번호: " + bon);
-			        System.out.printf("1등: %d번 2등: %d번 3등: %d번 4등: %d번 5등: %d번 낙첨: %d번\n", prize1, prize2, prize3, prize4, prize5, failCnt);
-			        System.out.println("총 금액: " + pay + "원");
-		        	break;
-		        }
-		        	
-		        pay += 1000;
-		        	
-		        }
+			 */
+
+			checkLottoNumber(win, createLotto(), bonus);
+			paper++; pay += 1000;
+			if(prize1 == 1) {
+				System.out.println("\n당첨번호: " + win + " + " + bonus);
+				System.out.printf("1등: %d번 2등: %d번 3등: %d번 4등: %d번 5등: %d번 낙첨: %d번\n", prize1, prize2, prize3, prize4, prize5, failCnt);
+				System.out.println("총 복권 개수: " + paper + "장");
+				System.out.println("총 금액: " + pay + "원");
+				break;
+			}
+
+		}
 
 	}
 

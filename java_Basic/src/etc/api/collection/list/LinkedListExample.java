@@ -37,6 +37,7 @@ public class LinkedListExample {
 		// 삭제하지 않으면서 읽기
 		System.out.println(list.peek());
 		System.out.println(list);
+		System.out.println("======================");
 		
 		// FIFO -> first in first out -> Queue
 		// offer, poll, peek
