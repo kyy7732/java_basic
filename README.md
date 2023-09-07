@@ -186,6 +186,7 @@
 ## **Throws_**
 * throws 사용법 (ThrowsExample) (throws 정의)
 
+#### **2023-09-05**
 ## **Throw_**
 * throw 사용법 (ThrowExample) (throw : 강제로 예외를 발생시킴, throw 정의)
 
@@ -215,3 +216,19 @@
 ## **arrays**
 * arrays(배열) (ArraysExample) (배열의복사, 탐색,오름,내림정렬, 배열 내부 요소가 동일한지 여부 확인)
 * arrays 예제 (ArraysQuiz) (완주하지 못한 선수를 출력하는 함수)
+
+#### **2023-09-06**
+# **api.util**
+## **random**
+* random() 메서드 활용 (RandomExample) (실수,정수, 자리수 지정)
+
+# **api.collection**
+## **list**
+* arrayList 사용법 (ArrayListExample) (arrayList.add(객체),add(인덱스,객체)(특정 인덱스에 객체삽입),get(인덱스)(객체를 참조하는 메서드(복사)),set(인덱스,수정할 객체)(객체 수정),remove(인덱스 또는 객체)(삭제),contains(객체)(존재유무파악),indexOf(객체)(인덱스번호 확인),clear()(내부 전체 삭제),isEmpty()(비어있는지여부),Collections.addAll(추가할 객체, 내용)(한번에 객체 여러개 추가하기),frquncy(찾을 객체, 찾고자하는 내용(객체x)(찾을 내용 개수 가하기),max,min(객체)(최대값,최소값),sort(객체)(오름차 정렬(작은값부터 큰순),sort(객체,COllections.reverseOrder())(내림차 정렬),swap(객체,x,y)(두 요소의 위치를 교체),shuffle(객체)(리스트 내용 무작위로 섞기),fill(객체,x)(x값으로 초기화)
+* List활용 (LinkedListExample)(.add(추가),addFirst(맨 앞),addLast(맨 뒤),remove(삭제),push(앞에서부터 추가),pop(최근 순서부터 삭제하면서 데이터 읽기),peek(삭제하지않고 데이터 읽기),offer(맨 뒤부터 추가),poll(맨 앞부터 삭제),peek)(맨 앞 읽기)
+* ArrayList(배열리스트),LinkedList(연결리스트)차이 설명 (ListCompare)
+* List배열 예제 (ListQuiz02) (List배열 생성, 중복 삭제 등)\
+
+## **set**
+* HashSet 사용법 (HashSetExample)(HashSet 정의, set.add(추가),remove(삭제),clear(내용 전체삭제)
+* Lotto1등 시뮬레이터 (LottoSimulator)(로또 당첨번호, 내 번호, 1등되기까지 금액)
