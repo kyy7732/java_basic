@@ -13,7 +13,7 @@ public class StreamCopy {
 		FileOutputStream newFile = null;
 		
 		try {
-			oldFile = new FileInputStream("C:/MyWork/car.PNG");
+			oldFile = new FileInputStream("C:/MyWork/car.jpg");
 			newFile = new FileOutputStream("C:\\Users\\ict4004\\Desktop\\copy.jpg");
 			
 			byte[] arr = new byte[100];
