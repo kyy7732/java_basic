@@ -1,11 +1,8 @@
-package etc.lambda.stream;
+package etc.stream;
 
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
-import java.util.stream.Collectors;
 
-import static etc.lambda.stream.Menu.*;
+import static etc.stream.Menu.*;
 import static java.util.stream.Collectors.*;
 
 public class Filtering {
@@ -16,9 +13,9 @@ public class Filtering {
         // 필터 조건에 맞는 데이터들을 필터링하여 리스트로 반환
         // 메뉴 중에 채식주의자가 먹을 수 있는 요리를 필터링
         menuList.stream()
-                .filter(dish -> dish.isVegetarian())
+                .filter(Dish::isVegetarian) // dish -> dish.isVegetarian()
                 .collect(toList())
-                .forEach(dish -> System.out.println("dish = " + dish));
+                .forEach(System.out::println); // dish -> system.out.println(dish)
 
 //        dishInVegiterian.forEach(dish -> System.out.println("dish = " + dish)); // forEach(): dish를 받을때마다 출력
 
